@@ -9,11 +9,11 @@ def isInt(x):
 
 def getPassword(pass_len):
     if isInt(pass_len):
-        strings = 'abcdefghijklmnopqrstuvwxyz'
-        upperStrings = strings.upper()
+        lowercase = 'abcdefghijklmnopqrstuvwxyz'
+        uppercase = lowercase.upper()
         numbers = '123456789'
         specialCharacters = '~`@#$%^&*()-=[]\\;\',./{}:"<>?'
-        types = [strings, upperStrings, numbers, specialCharacters]
+        types = [lowercase, uppercase, numbers, specialCharacters]
         password = ''
         for i in range(0, int(pass_len)):
             parentType = types[randint(0, len(types) - 1)]
